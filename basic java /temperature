@@ -1,0 +1,14 @@
+
+package basicjava;
+public class TemperatureConvertor{
+public static void main(String[] args){ 
+Scanner input = new Scanner(System.in); 
+double farn,cels; 
+System.out.println("Farenheit = “);
+
+farn = input.nextDouble(); 
+cels = (farn - 32)/1.8; 
+System.out.println("Celcuis : "+cels);
+} 
+
+}
