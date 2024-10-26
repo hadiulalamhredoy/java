@@ -1,0 +1,23 @@
+package begginnerjava;
+
+import java.util.Scanner;
+
+public class TemperatureConvert {
+    
+    public static void main(String[] args){
+        
+        Scanner input  = new Scanner(System.in);
+        double farn,cels;
+        
+        System.out.print("Farenheit = ");
+        farn = input.nextDouble();
+       
+        cels = (farn - 32)/1.8;
+        
+        System.out.println("Celcuis : "+cels);
+        
+       
+        
+    }
+    
+}
