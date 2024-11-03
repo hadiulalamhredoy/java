@@ -1,0 +1,78 @@
+
+package FinalKeyword;
+
+public class Person {
+   
+    String name;
+    int age;
+    
+    Person(String name,int age) {
+        this.name = name;
+        this.age  = age;
+        
+    }
+    
+    
+    public String toString(){
+        
+        return "Name : "+name +"\nAge : "+age;
+    }
+    
+    
+}
+
+
+
+
+package FinalKeyword;
+public class Test {
+ 
+    public static void main(String[] args){
+        
+        University ob = new University();
+        ob.display();
+        
+    }
+    
+    
+}
+
+
+package FinalKeyword;
+
+
+public class Trial {
+    
+public static void main(String[] args){
+     
+    Person p1 = new Person("Hredoy",21);
+    Person p2 = new Person("Oishee",20);
+  
+    System.out.println(p1);
+    System.out.println(p2);
+    
+    
+   }
+
+
+}
+
+
+
+package FinalKeyword;
+public class University {
+   
+    final String UNIVERSITY_NAME ="BUBT";
+    static final int fees;// static blank final variable
+    
+    static{
+        fees = 67000;  
+    }
+    
+    void display(){
+        System.out.println(UNIVERSITY_NAME);
+        System.out.println(fees);
+        
+    }
+    
+}
