@@ -1,0 +1,26 @@
+package oop;
+public class ADDdemo {
+Void add (int num1,int num2){
+System.out.println(num1+num2);
+}
+
+void add (int num1,int num2,int num3){
+System.out.println(num1+num2+num3);
+}
+
+}
+
+Object Class :
+
+package oop;
+
+public class ADDCheck {
+public static void main(String[] args){
+ADDdemo ob = new ADDdemo();
+ob.add(10,20);
+ob.add(10,20,30);
+ob.add(10,20,30,40);
+
+}
+
+}
