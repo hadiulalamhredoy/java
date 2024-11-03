@@ -1,0 +1,57 @@
+//MAIN Class
+package Polymorphism;
+
+public class Shape {
+ 
+    
+    double area(){
+        System.out.print("Area for shape : ");
+        return 0;
+    }
+    
+    
+}
+
+Object Class : 
+ 
+package Polymorphism;
+
+public class Rectangle extends Shape {
+   
+    double length,width;
+    
+    Rectangle(double length,double width){
+       this.length = length;
+       this.width = width;  
+    }
+    
+    double area(){
+        System.out.print("Area for Rectangle : ");
+        return length * width;
+        
+    }
+    
+}
+
+
+
+age Polymorphism;
+
+public class Triangle  extends Shape {
+
+    double base,heigth;
+    
+    Triangle(double base,double heigth){
+       this.base = base;
+       this.heigth = heigth;  
+    }
+    double area(){
+        System.out.print("Area for Triangle : ");
+        return 0.5 * base * heigth;
+        
+    }
+     
+}
+
+
+
