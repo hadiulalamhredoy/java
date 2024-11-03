@@ -1,0 +1,25 @@
+Main Class :
+
+package oop;
+
+public class CallByVaule {
+void change(int i){
+i = 20;
+}
+
+}
+
+Object Class :
+
+package oop;
+public class CallByVauleCheck {
+public static void main (String[] args){
+CallByVaule ob = new CallByVaule();
+int x = 10;
+System.out.println("x before call : "+x);
+ob.change(x);
+System.out.println("X after call : "+x);
+
+}
+
+}
