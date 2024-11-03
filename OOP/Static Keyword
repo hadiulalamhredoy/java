@@ -1,0 +1,52 @@
+Main Class :
+
+package Statickeyword;
+public class Student {
+    
+    String name;
+    int id;
+    static  String universityName = "East West University";
+    
+    Student(String n, int i){  
+       name = n;
+       id = i;   
+    }
+    
+    
+    void displayInformation(){
+        
+        System.out.println("Name : "+name);
+        System.out.println("ID : "+id);
+        System.out.println("University Name : "+universityName);
+        
+        
+    }
+    
+    
+}
+
+
+Object Class :
+
+
+package Statickeyword;
+
+public class Test {
+   
+   public static void main(String[] args){
+       
+       
+     Student s1 = new Student("Hredoy",284);
+     Student s2 = new Student("Lubaba",209);
+     
+      s1.displayInformation();
+      s2.displayInformation();
+       
+       
+   } 
+    
+    
+}
+
+
+
