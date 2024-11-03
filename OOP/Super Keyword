@@ -1,0 +1,118 @@
+Main  Class :
+
+
+package SuperKeyword;
+
+
+public class A {
+ 
+    A(){
+        System.out.println("A's cinstructor");  
+        
+    }
+    
+ 
+    
+  
+    
+ }
+
+
+
+
+package SuperKeyword;
+
+public class B extends A {
+  
+    
+    
+   B(){
+       super(); 
+       System.out.println("B's cinstructor");  
+        
+    }
+    
+}
+
+
+
+package SuperKeyword;
+
+
+public class Car extends Vehicle {
+    
+   // color,weigth,attribute()
+    int gear;
+    
+    Car(String c, double w,int g ){
+        
+        super(c,w);
+        gear = g;
+        
+        
+    }
+    
+    void attribute(){
+        super.attribute();
+        System.out.println("Gear : "+gear);
+        
+    }
+    
+    
+}
+
+
+
+package SuperKeyword;
+public class Test {
+ 
+    public static void main(String[] args){
+        
+        B ob = new B ();
+        
+        
+    }
+    
+}
+
+
+
+package SuperKeyword;
+
+
+public class Trial {
+  
+    public static void main(String[] args){
+        
+        Car volbo = new Car("White",350,5);
+        volbo.attribute();
+        
+    }
+    
+    
+}
+
+
+package SuperKeyword;
+
+
+public class Vehicle {
+     
+    String color;
+    double weigth;
+    
+    Vehicle(String c,double w){
+        
+        color = c;
+        weigth = w;
+        
+    }
+    
+    void attribute(){
+        System.out.println("Color : "+color);
+        System.out.println("Weigth : "+weigth);
+        
+    }
+    
+    
+}
