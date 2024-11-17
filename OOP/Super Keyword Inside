@@ -1,0 +1,37 @@
+Main Class :
+
+package SuperKeyword;
+
+public class A {
+
+void display(){
+
+System.out.println("Inside A Class");
+}
+void message(){
+
+}
+
+}
+
+Object Class 01:
+
+package SuperKeyword;
+public class B extends A {
+//display()
+void display(){
+super.display();
+System.out.println("Inside B Class");
+}
+}
+
+Object Class 02:
+
+package SuperKeyword;
+public class Test {
+public static void main(String[] args){
+B ob = new B ();
+
+ob.display();
+}
+}
