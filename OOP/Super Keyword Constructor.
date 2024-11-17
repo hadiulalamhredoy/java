@@ -1,0 +1,31 @@
+Main Class :
+
+package SuperKeyword;
+
+public class A {
+A(){
+System.out.println("A's cinstructor");
+}
+
+}
+
+Object Class01:
+
+package SuperKeyword;
+public class B extends A {
+
+B(){
+super();
+System.out.println("B's cinstructor");
+}
+}
+
+Object Class 02 :
+
+package SuperKeyword;
+public class Test {
+public static void main(String[] args){
+B ob = new B ();
+
+}
+}
