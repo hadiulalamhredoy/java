@@ -1,0 +1,47 @@
+package SuperKeyword;
+
+public class Vehicle {
+String color;
+double weigth;
+Vehicle(String c,double w){
+color = c;
+weigth = w;
+}
+void attribute(){
+System.out.println("Color : "+color);
+System.out.println("Weigth : "+weigth);
+}
+
+}
+
+Object Class 01 :
+
+package SuperKeyword;
+
+public class Car extends Vehicle {
+// color,weigth,attribute()
+int gear;
+Car(String c, double w ){
+super(c,w);
+
+gear = g;
+
+}
+void attribute(){
+super.attribute();
+System.out.println("Gear : "+gear);
+}
+
+}
+
+Object Class 02:
+
+package SuperKeyword;
+
+public class Trial {
+public static void main(String[] args){
+Car volbo = new Car("White",350,5);
+volbo.attribute();
+}
+
+}
