@@ -1,0 +1,40 @@
+package oop;
+
+public class Teacher {
+String name,gender;
+int phone;
+
+Teacher (){
+System.out.println("No Vaule");
+}
+
+Teacher (String n,String m, int ph){
+name = n;
+gender = m;
+phone = ph;
+}
+void displayInformation(){
+System.out.println("Name: "+name);
+System.out.println("Gender: "+gender);
+System.out.println("phone: "+phone);
+System.out.println("\n\n");
+
+}
+
+}
+Object Class :
+package oop;
+
+public class Test {
+public static void main (String [] args){
+Teacher teacher1 = new Teacher("Arifuzaman","male",1537122278);
+teacher1.displayInformation();
+
+Teacher teacher2 = new Teacher("Azam","male",130859975);
+teacher2.displayInformation();
+
+Teacher teacher3 = new Teacher();
+teacher3.displayInformation();
+
+}
+}
