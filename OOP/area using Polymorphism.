@@ -1,0 +1,59 @@
+
+Main Class :
+
+package Polymorphism;
+public class Shape {
+
+double area(){
+System.out.println("Area of shape : ");
+return 0;
+}
+
+}
+Object Class 01:
+
+package Polymorphism;
+public class Rectangle extends Shape {
+double length,width;
+Rectangle(double length,double width){
+this.length = length;
+this.width = width;
+}
+double area(){
+System.out.print("Area for Rectangle : ");
+return length * width;
+}
+
+}
+
+Object Class 02:
+
+package Polymorphism;
+public class Triangle extends Shape {
+double base,heigth;
+Triangle(double base,double heigth){
+this.base = base;
+this.heigth = heigth;
+}
+double area(){
+System.out.print("Area for Triangle : ");
+return 0.5 * base * heigth;
+}
+
+}
+
+Object Class 03:
+
+package Polymorphism;
+public class Trial {
+public static void main (String[] args){
+Shape s = new Shape();
+
+Rectangle r = new Rectangle(20,30);
+Triangle t = new Triangle(30,40);
+System.out.println(s.area());
+System.out.println(r.area());
+System.out.println(t.area());
+}
+
+}
