@@ -1,0 +1,39 @@
+Main Class:
+
+package ThisKeyWord;
+public class Person {
+String name;
+int age;
+String hairColor;
+Person(String name, int age) {
+this.name = name;
+this.age = age;
+}
+Person(String name, int age, String hairColor){
+this(name,age);
+
+this.hairColor = hairColor;
+}
+
+void display(){
+System.out.println("Name : " + name);
+System.out.println("Age : " + age);
+System.out.println("HairColor : " + hairColor);
+
+}
+
+}
+
+Object Class :
+
+package ThisKeyWord;
+public class Test {
+public static void main(String[] args){
+Person p1 = new Person("Hredoy",21);
+p1.display();
+Person p2 = new Person("Oishee",19,"black");
+p2.display();
+
+}
+
+}
