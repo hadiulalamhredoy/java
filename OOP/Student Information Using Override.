@@ -1,0 +1,32 @@
+Main Class:
+
+package Override;
+public class University {
+final void display(){
+System.out.println("university info")
+}
+}
+
+Object Class 01:
+
+package Override;
+
+public class Student extends University{
+
+void display2(){
+System.out.println("student info");
+
+}
+}
+Object Class 02:
+
+package Override;
+
+public class Test {
+public static void main(String[] args){
+Student s1 = new Student();
+s1.display();
+s1.display2();
+}
+
+}
