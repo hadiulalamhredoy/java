@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Lab02Practise05 {
+public class Pattern05 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,11 +10,7 @@ public class Lab02Practise05 {
         System.out.print("Enter size (non-negative integer): ");
         int size = input.nextInt();
 
-        if (size < 0) {
-            System.out.println("Size must be a non-negative integer.");
-            return;
-        }
-
+        
         for (int i = size; i > 0; i--) {
             
             for (int j = size - i; j > 0; j--) {
