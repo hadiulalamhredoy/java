@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Pattern08 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) { // Outer loop for rows
+            // First loop: Print spaces
+            for (int j = rows - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+
+            // Second loop: Print stars with spaces in between
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+
+            // Third loop: (not needed here since spaces and stars are handled above)
+
+            // Move to the next line
+            System.out.println();
+        }
+    }
+}
