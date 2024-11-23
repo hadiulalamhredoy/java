@@ -7,9 +7,9 @@ public class Pattern04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-      Scanner scanner = new Scanner(System.in);
+      
         System.out.print("Enter size (non-negative integer): ");
-        int size = scanner.nextInt();
+        int size = input.nextInt();
 
         if (size < 0) {
             System.out.println("Size must be a non-negative integer.");
