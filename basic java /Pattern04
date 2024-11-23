@@ -11,11 +11,7 @@ public class Pattern04 {
         System.out.print("Enter size (non-negative integer): ");
         int size = input.nextInt();
 
-        if (size < 0) {
-            System.out.println("Size must be a non-negative integer.");
-            
-        }
-
+      
         for (int i = 1; i <= size; i++) {
             for (int j = size - i; j > 0; j--) {
                 System.out.print(" ");
