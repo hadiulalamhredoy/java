@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class Lab02Practise05 {
+public class Pattern06 {
 
      public static void main(String [] args){
     
