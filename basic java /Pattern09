@@ -8,11 +8,6 @@ public class Pattern09 {
         System.out.print("Enter the size of the rhombus (positive integer): ");
         int size = scanner.nextInt();
 
-        if (size <= 0) {
-            System.out.println("Size must be a positive integer.");
-            return;
-        }
-
         // Upper half of the rhombus
         for (int i = 1; i <= size; i++) {
             // Print leading spaces
