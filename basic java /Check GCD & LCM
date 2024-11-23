@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class GCD_LCM {
+  
+       public static void main(String[] args) {
+        
+           Scanner input = new Scanner(System.in);
+           
+           int num1,num2,rem,gcd,lcm;
+           
+           System.out.print("Enter num1 : ");
+           num1 = input.nextInt();
+           
+           System.out.print("Enter num2 : ");
+           num2 = input.nextInt();
+        
+           
+           while(num2!=0){
+               rem = num1%num2;
+               num1 = num2;
+               num2 = rem;
+            }
+           
+          gcd  = num1;
+          lcm = (num1*num2)/gcd;
+          
+           System.out.println("GCD = "+gcd);
+              System.out.println("LCM = "+lcm);
+    
+    
+    
+}
+       
+
+}
