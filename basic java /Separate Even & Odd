@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class SeparateEvenOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input the array size
+        System.out.print("Enter the size of the array: ");
+        int n = scanner.nextInt();
+
+
+
+        int[] array = new int[n];
+
+        // Input the array element
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            array[i] = scanner.nextInt();
+        }
+
+        // Separate even and odd numbers
+        ArrayList<Integer> evenList = new ArrayList<>();
+        ArrayList<Integer> oddList = new ArrayList<>();
+
+        for (int num : array) {
+            if (num % 2 == 0) {
+                evenList.add(num);
+            } else {
+                oddList.add(num);
+            }
+        }
+
+        // Combine even and odd lists
+        evenList.addAll(oddList);
+
+        // Output the result
+        System.out.println("Array after separating even and odd numbers:");
+        for (int num : evenList) {
+            System.out.print(num + " ");
+        }
+    }
+}
