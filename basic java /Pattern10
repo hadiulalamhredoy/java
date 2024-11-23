@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Pattern10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the number of rows for Pascal's Triangle: ");
+        int rows = scanner.nextInt();
+
+       
+  
+        int[][] triangle = new int[rows][rows];
+
+        int i = 0; // Initialize row index
+
+        while (i < rows) {
+            int j = 0; // Initialize column index
+
+        
+            while (j <= i) {
+              
+                if (j == 0 || j == i) {
+                    triangle[i][j] = 1;
+                } else {
+                    
+                    triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+                }
+
+                j++;
+            }
+
+            i++;
+        }
+
+      
+        i = 0; // Reset row index
+        while (i < rows) {
+          
+            int spaces = rows - i - 1;
+            while (spaces > 0) {
+                System.out.print(" ");
+                spaces--;
+            }
+
+      
+            int j = 0;
+            while (j <= i) {
+                System.out.print(triangle[i][j] + " ");
+                j++;
+            }
+
+            System.out.println();
+            i++;
+        }
+    }
+}
