@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Pattern09 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the size from the user
+        System.out.print("Enter the size of the rhombus (positive integer): ");
+        int size = scanner.nextInt();
+
+        if (size <= 0) {
+            System.out.println("Size must be a positive integer.");
+            return;
+        }
+
+        // Upper half of the rhombus
+        for (int i = 1; i <= size; i++) {
+            // Print leading spaces
+            for (int j = size - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+
+            // Print increasing numbers
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+
+            // Print decreasing numbers
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+
+        // Lower half of the rhombus
+        for (int i = size - 1; i > 0; i--) {
+            // Print leading spaces
+            for (int j = size - i; j > 0; j++) {
+                System.out.print(" ");
+            }
+
+            // Print increasing numbers
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+
+            // Print decreasing numbers
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+    }
+}
+
