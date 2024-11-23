@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+
+public class Pattern04 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+      Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter size (non-negative integer): ");
+        int size = scanner.nextInt();
+
+        if (size < 0) {
+            System.out.println("Size must be a non-negative integer.");
+            
+        }
+
+        for (int i = 1; i <= size; i++) {
+            for (int j = size - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+    
+}
